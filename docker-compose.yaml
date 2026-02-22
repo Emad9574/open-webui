@@ -16,6 +16,7 @@ services:
     container_name: open-webui
     volumes:
       - open-webui:/app/backend/data
+      - ./prune:/app/prune
     depends_on:
       - ollama
     ports:
